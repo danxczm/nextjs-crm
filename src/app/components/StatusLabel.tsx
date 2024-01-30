@@ -1,5 +1,5 @@
-import React from 'react'
-import clsx from 'clsx'
+import React from 'react';
+import clsx from 'clsx';
 
 export enum Status {
   Active = 'active',
@@ -9,9 +9,9 @@ export enum Status {
 }
 
 export interface StatusLabelProps {
-  children: React.ReactNode
-  status: Status
-  disabled?: boolean
+  children: React.ReactNode;
+  status: Status;
+  disabled?: boolean;
 }
 
 export default function StatusLabel({
@@ -32,8 +32,8 @@ export default function StatusLabel({
         }
       )}
     >
-      <div className='w-1 h-1 mr-2 rounded-full bg-current' />
+      <div className="w-1 h-1 mr-2 rounded-full bg-current" />
       {children}
     </div>
-  )
+  );
 }

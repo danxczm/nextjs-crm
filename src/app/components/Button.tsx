@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import React from 'react'
-import clsx from 'clsx'
+import React from 'react';
+import clsx from 'clsx';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  disabled?: boolean
+  disabled?: boolean;
 }
 
 export default function Button({ disabled, ...rest }: ButtonProps) {
@@ -18,5 +18,5 @@ export default function Button({ disabled, ...rest }: ButtonProps) {
         disabled && 'text-zinc-100'
       )}
     />
-  )
+  );
 }
