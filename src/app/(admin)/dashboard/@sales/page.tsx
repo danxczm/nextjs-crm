@@ -10,9 +10,12 @@ import SummaryTableHeader from 'app/components/SummaryTableHead';
 export interface PageProps {}
 
 export default async function Page({}: PageProps) {
-  const data: any[] = await new Promise(res => {
-    setTimeout(() => res(getSummarySales()), 4000);
-  });
+  // *  fake delay
+  //   const data: any[] = await new Promise(res => {
+  //     setTimeout(() => res(getSummarySales()), 4000);
+  //   });
+
+  const data = await getSummarySales();
 
   return (
     <DashboardCard label="Sales details">
